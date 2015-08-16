@@ -19,14 +19,22 @@
   margin-top: 0;
 }
 
+.post-meta {
+  display: block;
+}
+
 // Meta data line below post title
 .post-date {
-  display: block;
+  /* display: block; */
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
 
+.avatar {
+  margin: 0 0 -.2rem;
+  display: inline-block;
+}
 
 // Related posts
 .related {
