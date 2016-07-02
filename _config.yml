@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 keywords: "blog, gentoo, linux, vim, zsh"
 favicon: http://ibrother.qiniudn.com/favicon.ico
-highlighting-style: monokai
+highlighting-style: monokai.sublime
 branch: gh-pages
 
 # Where things are
@@ -37,20 +37,21 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      ["jekyll-mentions", "jemoji", "jekyll-redirect-from"]
+gems:      ["jekyll-paginate", "jekyll-mentions", "jemoji", "jekyll-redirect-from"]
 
 # Conversion
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 lsi:         false
 excerpt_separator: "<!--more-->"
+incremental: false
 
 # Serving
 detach:  false
 port:    4000
 host:    127.0.0.1
 baseurl: "/poole" # does not include hostname
-url: "http://staticblog.github.io" # the base hostname & protocol for your site
+url: "https://staticblog.github.io" # the base hostname & protocol for your site
 
 # Outputting
 permalink:     /:categories/:title
@@ -69,6 +70,7 @@ redcarpet:
   extensions: []
 
 kramdown:
+  input: GFM
   auto_ids:       true
   footnote_nr:    1
   entity_output:  as_char
